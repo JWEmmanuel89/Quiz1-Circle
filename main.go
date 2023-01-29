@@ -21,10 +21,11 @@ func (c Circle) Perimeter() float64 {
 }
 
 func main() {
+	// Create variable with vaule for type Circle
 	cir1 := Circle{
 		Radius: 6,
 	}
-
+	// Call and test methods of Circle
 	fmt.Println(cir1.Area())
 	fmt.Println(cir1.Perimeter())
 }
