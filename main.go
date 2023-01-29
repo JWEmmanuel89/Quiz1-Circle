@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 )
 
@@ -17,4 +18,13 @@ func (c Circle) Area() float64 {
 // #8 Create method Perimeter of type Circle
 func (c Circle) Perimeter() float64 {
 	return 2 * math.Pi * c.Radius
+}
+
+func main() {
+	cir1 := Circle{
+		Radius: 6,
+	}
+
+	fmt.Println(cir1.Area())
+	fmt.Println(cir1.Perimeter())
 }
